@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAP UI5 Walkthrough</title>
+    <!-- 
+      id="sap-ui-bootstrap" // Идентификатор для SAPUI5
+      src="https://ui5.sap.com/1.71.70/resources/sap-ui-core.js" // Инициализация среды выполнения "the SAPUI5 core library"
+      data-sap-ui-theme="sap_belize" // Основная тема для проекта.
+      data-sap-ui-libs="sap.m" // Библиотека пользовательского интерфейса.
+      data-sap-ui-compatVersion="edge" // Версия совместима с браузерами Edge для использования новейшего функционала SAPUI5
+      data-sap-ui-async="true" // Начальная загрузка асинхронно. Это означает, что ресурсы SAPUI5 могут загружаться одновременно в фоновом режиме для повышения производительности.
+      data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index" // Объявление модуля для начальной загрузки JS кода index.js
+      data-sap-ui-resourceroots='{ "sap.ui.demo.walkthrough": "./" }' // Сообщаем SAPUI5 core, что ресурсы пространства имен sap.ui.demo.walkthrough находятся в той же папке, что и index.html. Это необходимо, например, для приложений, которые запускаются на панели запуска SAP Fiori.
+    -->
+    <script
+      id="sap-ui-bootstrap"
+      src="https://ui5.sap.com/1.71.70/resources/sap-ui-core.js"
+      data-sap-ui-theme="sap_belize"
+      data-sap-ui-libs="sap.m"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-async="true"
+      data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index"
+      data-sap-ui-resourceroots='{
+			"sap.ui.demo.walkthrough": "./"
+		}'
+    ></script>
+  </head>
+  <!-- Класс sapUiBody добавляет дополнительные стили, зависящие от темы, для отображения приложений SAPUI5. -->
+  <body class="sapUiBody" id="content"></body>
+</html>
