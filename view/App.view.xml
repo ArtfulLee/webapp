@@ -1,3 +1,4 @@
+<!-- xmlns:mvc="sap.ui.core.mvc" - Объявление всех view SAPUI5 и Model-View-Controller (MVC) -->
 <mvc:View
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
