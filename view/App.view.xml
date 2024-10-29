@@ -1,4 +1,9 @@
-<!-- xmlns:mvc="sap.ui.core.mvc" - Объявление всех view SAPUI5 и Model-View-Controller (MVC) -->
+<!-- 
+Создается xml-представление (View) с помощью тега <mvc: View>.
+Задаются пространства имен для элементов внутри View: "sap.m" и "sap.ui.core.mvc".
+Создается элемент текста (Text) с текстом "Hello World" с помощью тега .
+Элемент Text добавляется внутрь xml-представления.
+ -->
 <mvc:View
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
