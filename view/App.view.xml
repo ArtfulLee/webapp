@@ -1,12 +1,21 @@
-<!-- 
-Создается xml-представление (View) с помощью тега <mvc: View>.
-Задаются пространства имен для элементов внутри View: "sap.m" и "sap.ui.core.mvc".
-Создается элемент текста (Text) с текстом "Hello World" с помощью тега .
-Элемент Text добавляется внутрь xml-представления.
- -->
+<!-- controllerName - Указывает имя контроллера, который управляет этой представлением. Контроллер содержит логику обработки событий и взаимодействия с моделью. -->
+<!-- xmlns="sap.m" - Определяет пространство имен для элементов управления SAPUI5, используемых в этом представлении. Здесь используется пространство имен для мобильных элементов управления. -->
+<!-- xmlns:mvc="sap.ui.core.mvc"> - Определяет пространство имен для MVC (Model-View-Controller) компонентов, позволяющее использовать элементы управления, связанные с MVC. -->
+<!-- press=".onShowHello"/> - Указывает обработчик события "press" (нажатие) для кнопки. Когда кнопка нажата, вызывается метод `onShowHello` в контроллере. -->
 <mvc:View
+    controllerName="sap.ui.demo.walkthrough.controller.App"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
 >
-    <Text text="Hello World" />
+    <Button
+        text="Say Hello"
+        press=".onShowHello"
+    />
+
+    <Input
+        value="{/recipient/name}"
+        description="Hello {/recipient/name}"
+        valueLiveUpdate="true"
+        width="60%"
+    />
 </mvc:View>
