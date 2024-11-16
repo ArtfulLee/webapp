@@ -1,7 +1,3 @@
-<!-- controllerName - Указывает имя контроллера, который управляет этой представлением. Контроллер содержит логику обработки событий и взаимодействия с моделью. -->
-<!-- xmlns="sap.m" - Определяет пространство имен для элементов управления SAPUI5, используемых в этом представлении. Здесь используется пространство имен для мобильных элементов управления. -->
-<!-- xmlns:mvc="sap.ui.core.mvc"> - Определяет пространство имен для MVC (Model-View-Controller) компонентов, позволяющее использовать элементы управления, связанные с MVC. -->
-<!-- press=".onShowHello"/> - Указывает обработчик события "press" (нажатие) для кнопки. Когда кнопка нажата, вызывается метод `onShowHello` в контроллере. -->
 <mvc:View
     controllerName="sap.ui.demo.walkthrough.controller.App"
     xmlns="sap.m"
@@ -11,7 +7,6 @@
         text="{i18n>showHelloButtonText}"
         press=".onShowHello"
     />
-
     <Input
         value="{/recipient/name}"
         description="Hello {/recipient/name}"

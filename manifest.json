@@ -1,0 +1,12 @@
+{
+  "sap.ui5": {
+    "componentName": "sap.ui.demo.walkthrough",
+    "resources": {
+      "js": [
+        {
+          "uri": "Component.js"
+        }
+      ]
+    }
+  }
+}

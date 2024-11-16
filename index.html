@@ -4,16 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAP UI5 Walkthrough</title>
-    <!-- 
-      id="sap-ui-bootstrap" // Устанавливает идентификатор для сценария.
-      src="https://ui5.sap.com/1.71.70/resources/sap-ui-core.js" // Инициализация среды выполнения "the SAPUI5 core library". Указывает источник (URL) для загрузки сценария.
-      data-sap-ui-theme="sap_belize" // Устанавливает тему для SAP UI5.
-      data-sap-ui-libs="sap.m" // Устанавливает библиотеку SAP UI для использования (sap.m).
-      data-sap-ui-compatVersion="edge" // Указывает версию совместимости SAP UI5.
-      data-sap-ui-async="true" // Устанавливает асинхронную загрузку сценария. Это означает, что ресурсы SAPUI5 могут загружаться одновременно в фоновом режиме для повышения производительности.
-      data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index" // Задает точку входа для инициализации SAP UI5 модуля. Загрузки JS кода index.js
-      data-sap-ui-resourceroots='{ "sap.ui.demo.walkthrough": "./" }' // Устанавливает корневую директорию ресурсов для модуля SAP UI5.Сообщаем SAPUI5 core, что ресурсы пространства имен sap.ui.demo.walkthrough находятся в той же папке, что и index.html. Это необходимо, например, для приложений, которые запускаются на панели запуска SAP Fiori.
-    -->
     <script
       id="sap-ui-bootstrap"
       src="https://ui5.sap.com/1.71.70/resources/sap-ui-core.js"
@@ -21,12 +11,11 @@
       data-sap-ui-libs="sap.m"
       data-sap-ui-compatVersion="edge"
       data-sap-ui-async="true"
-      data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index"
       data-sap-ui-resourceroots='{
-			"sap.ui.demo.walkthrough": "./"
-		}'
+        "sap.ui.demo.walkthrough": "./"
+      }'
+      data-sap-ui-oninit="module:sap/ui/demo/walkthrough/index"
     ></script>
   </head>
-  <!-- Класс sapUiBody добавляет дополнительные стили, зависящие от темы, для отображения приложений SAPUI5. -->
   <body class="sapUiBody" id="content"></body>
 </html>
