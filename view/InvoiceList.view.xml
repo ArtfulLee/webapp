@@ -27,6 +27,7 @@
             </Toolbar>
         </headerToolbar>
         <items>
+            <!-- Step 30: Debugging Tools -->
             <ObjectListItem
                 title="{invoice>Quantity} x {invoice>ProductName}"
                 number="{
