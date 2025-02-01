@@ -30,7 +30,7 @@
             />
             <FormattedText
                 htmlText="Hello {/recipient/name}"
-                class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+                class="sapUiTinyMargin sapThemeHighlight-asColor myCustomText"
             />
         </content>
     </Panel>
